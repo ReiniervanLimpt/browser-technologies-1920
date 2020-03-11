@@ -41,3 +41,5 @@ Je krijgt 2 features van de 8
 ## met de colorblinding extensie heb ik geprobeerd deze problemen te ondervinden.
 
 ![kleurentest smasing mag](https://user-images.githubusercontent.com/36195440/76415964-7bb82300-639a-11ea-8e72-c8d43513bc3e.png)
+
+Een ander probleem wat je kan ondervinden is tekst op afbeeldingen die niet genoeg contrast bieden voor kleurenblinden, dit probleem is op te lossen door een gekleurd vlak met een lage dekking over de afbeelding te palatsen om het contrast tussen afbeelding en tekst te vergroten.
