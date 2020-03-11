@@ -43,3 +43,9 @@ Je krijgt 2 features van de 8
 ![kleurentest smasing mag](https://user-images.githubusercontent.com/36195440/76415964-7bb82300-639a-11ea-8e72-c8d43513bc3e.png)
 
 Een ander probleem wat je kan ondervinden is tekst op afbeeldingen die niet genoeg contrast bieden voor kleurenblinden, dit probleem is op te lossen door een gekleurd vlak met een lage dekking over de afbeelding te palatsen om het contrast tussen afbeelding en tekst te vergroten.
+
+## internet security en kleurenblindheid
+
+Om botting tegen te gaan worden soms captcha images gegenereerd, deze dienen ervoor te checken of een menselijke gebruiker de webpagina bezoekt in de volgende afbeeldingen is te zien welke problemen je hierin ondervinden kan.
+
+![internetsecurity](https://user-images.githubusercontent.com/36195440/76416739-ef0e6480-639b-11ea-981f-22b5d33fd60f.png)
