@@ -35,4 +35,5 @@ Je krijgt 2 features van de 8
 ### Kleur uitzetten & kleurenblindheid instellen
 
 4.5% van alle mensen en 8% van alle mannen hebben te maken met kleurenblinheid. Smashing mag heeft er een [artikel](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/) over waarin de volgende afbeelding te vinden is:
+
 ![text-contrast-preview-opt](https://user-images.githubusercontent.com/36195440/76415684-e9b01a80-6399-11ea-91c3-6ed575c6fed2.png) met de colorblinding extensie heb ik geprobeerd deze problemen te ondervinden. ![kleurentest smasing mag](https://user-images.githubusercontent.com/36195440/76415964-7bb82300-639a-11ea-8e72-c8d43513bc3e.png)
