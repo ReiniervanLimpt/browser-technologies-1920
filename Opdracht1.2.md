@@ -27,6 +27,12 @@ Laat je website voorlezen door een screenreader.
 
 verpsringende UI bij geen skeleton ui.
 
-## geen afbeeldingen:
+## geen afbeeldingen in chrome / brave / firefox:
 
-Zorg dat de ruimte die afbeeldingen innemen ook een background color hebben zodat de tekst nog opvalt.
+Ik heb veel gebruik gemaakt van background images, wat ik in dit geval wel goed gedaan heb is mijn containers een standaard hoogte en breedte te geven waardoor de ruimte niet vrijgeven wordt en de UI intact blijft.
+
+# Firefox geeft "placeholders" die je laat weten dat er eigenlijk afbeeldingen horen te staan, chrome en brave tonen niks...
+
+![geef afb firefox](https://user-images.githubusercontent.com/36195440/76524749-e5076700-646a-11ea-8529-503e5dddfa7e.jpg)
+![geef afb brave](https://user-images.githubusercontent.com/36195440/76524745-e33da380-646a-11ea-9177-25780fd2f6a2.jpg)
+
