@@ -47,3 +47,6 @@ In mijn WAFS applicatie heb ik niet genoeg contrast toegepast in mijn links, dez
 
 ## muis/trackpad werkt niet
 
+Door mijn applicatie van het frontend vak van project web valt prima te tabben behalve wanneer je dit met een screenreader doet, belangrijke kopjes die als H1 staan kunnen niet op gefocust worden en worden dus ook neit voorgelezen waardoor het niet duidelijk is dat de content daarna daartoe toebehoort.
+
+een leuke bevinding is [deze optie](https://www.online-tech-tips.com/cool-websites/control-mouse-with-keyboard/) waar je met je toetsenbord je muis kan besturen...
