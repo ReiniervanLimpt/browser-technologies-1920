@@ -38,4 +38,6 @@ Ik heb veel gebruik gemaakt van background images, wat ik in dit geval wel goed 
 
 ## custom fonts uitzetten in chrome / brave / firefox:
 
+Ik heb geen fallback fonts gedefineerd, als ik de pagina refresh krijg ik meteen het standaardfont te zien.
+
 ![no fonts](https://user-images.githubusercontent.com/36195440/76525796-ce620f80-646c-11ea-9f41-2fdc85510b01.jpg)
