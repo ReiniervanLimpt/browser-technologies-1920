@@ -22,3 +22,7 @@ Laat je website voorlezen door een screenreader.
   - een beschrijving van de Devices en browsers waar je op hebt getest
   - een beschrijving van de screenreader test
   - beschrijf hoe je de problemen hebt opgelost, of hoe je dit zou oplossen (met todo’s) als je genoeg tijd en budget zou hebben
+
+## geen breedband internet:
+
+verpsringende UI bij geen skeleton ui
