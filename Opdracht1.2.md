@@ -25,4 +25,8 @@ Laat je website voorlezen door een screenreader.
 
 ## geen breedband internet:
 
-verpsringende UI bij geen skeleton ui
+verpsringende UI bij geen skeleton ui.
+
+## geen afbeeldingen:
+
+Zorg dat de ruimte die afbeeldingen innemen ook een background color hebben zodat de tekst nog opvalt.
