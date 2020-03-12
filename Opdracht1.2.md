@@ -25,8 +25,6 @@ Laat je website voorlezen door een screenreader.
 
 ## geen breedband internet:
 
-verpsringende UI bij geen skeleton ui.
-
 ## geen afbeeldingen in chrome / brave / firefox:
 
 Ik heb veel gebruik gemaakt van background images, wat ik in dit geval wel goed gedaan heb is mijn containers een standaard hoogte en breedte te geven waardoor de ruimte niet vrijgeven wordt en de UI intact blijft.
@@ -41,8 +39,11 @@ Ik heb geen fallback fonts gedefineerd, als ik de pagina refresh krijg ik meteen
 
 ![no fonts](https://user-images.githubusercontent.com/36195440/76525796-ce620f80-646c-11ea-9f41-2fdc85510b01.jpg)
 
-## kleurenblnidheid test
+## kleurenblindheid test
 
 In mijn WAFS applicatie heb ik niet genoeg contrast toegepast in mijn links, deze staan op een achtergrond met kleur zodat ik hem zelf beter kon zien maar met een blue-blind beperking zie ik ze amper.
 
 ![kleurenblindheid SLECHT](https://user-images.githubusercontent.com/36195440/76526391-bccd3780-646d-11ea-9cb6-ebd2a600e91c.jpg)
+
+## muis/trackpad werkt niet
+
