@@ -50,3 +50,31 @@ In mijn WAFS applicatie heb ik niet genoeg contrast toegepast in mijn links, dez
 Door mijn applicatie van het frontend vak van project web valt prima te tabben behalve wanneer je dit met een screenreader doet, belangrijke kopjes die als H1 staan kunnen niet op gefocust worden en worden dus ook neit voorgelezen waardoor het niet duidelijk is dat de content daarna daartoe toebehoort.
 
 een leuke bevinding is [deze optie](https://www.online-tech-tips.com/cool-websites/control-mouse-with-keyboard/) waar je met je toetsenbord je muis kan besturen...
+
+## geen local storage
+
+Hier merkte ik dat mijn applicatie niet meer werkte, ik had mijn code zo geschreven dat er eerst in local storage dmv een if statement gekeken word of er data aanwezig is deze getoond werd. Ik was mij er niet van bewust dat de code stuk zou lopen en dacht dat hij gewoon een api call zou uitvoeren zoals hij had gedaan wanneer localstorage wel aan stond.
+
+Ik had dit kunnen oplossen door eerst te kijken of er uberhaupt local storage is EN of ik hiertoe toegang heb/had.
+
+![local storage error](https://user-images.githubusercontent.com/36195440/76601655-a96faa00-6509-11ea-925b-6b752fd8cfdb.png)
+
+En de code die ik geschreven had:
+
+```javascript
+  getCocktails: function() {
+    const userInput = document.getElementById("ingredient").value;
+    if (localStorage.getItem("'" + userInput + "'") === null) {
+      console.log("doesnt exist in local storage")
+      api.fetchCocktails()
+    } else {
+      console.log("overview exists in local storage")
+      const retrievedData = JSON.parse(localStorage.getItem("'" + userInput + "'"))
+      data.filterOverview(retrievedData);
+    }
+  },
+  ```
+  
+  Het resultaat in mijn applicatie:
+  
+  ![local storage uit](https://user-images.githubusercontent.com/36195440/76601751-dde36600-6509-11ea-9fca-322d3c717a49.png)
