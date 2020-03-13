@@ -58,7 +58,7 @@ Door mijn applicatie van het frontend vak van project web valt prima te tabben b
 
 een leuke bevinding is [deze optie](https://www.online-tech-tips.com/cool-websites/control-mouse-with-keyboard/) waar je met je toetsenbord je muis kan besturen...
 
-## geen local storage
+## geen local storage / coockies
 
 Hier merkte ik dat mijn applicatie niet meer werkte, ik had mijn code zo geschreven dat er eerst in local storage dmv een if statement gekeken word of er data aanwezig is deze getoond werd. Ik was mij er niet van bewust dat de code stuk zou lopen en dacht dat hij gewoon een api call zou uitvoeren zoals hij had gedaan wanneer localstorage wel aan stond.
 
