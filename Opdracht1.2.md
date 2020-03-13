@@ -12,7 +12,7 @@ Pas Progressive enhancement toe op je OBA Web App. Test de 8 features uit opdrac
 
 Test je OBA opdracht op verschillende devices en browsers. Noteer welk device en welke browsers je hebt getest. TEst je OBA opdracht minimaal in 3 devices, en naast Chrome in Firefox en nog een andere browser.
 
-Laat je website voorlezen door een screenreader.
+Laat je website voorlezen door een screenreader. 
 
 
 ### Criteria
@@ -24,10 +24,17 @@ Laat je website voorlezen door een screenreader.
   - beschrijf hoe je de problemen hebt opgelost, of hoe je dit zou oplossen (met todo’s) als je genoeg tijd en budget zou hebben
 
 ## geen breedband internet:
+Mijn applicatie toonde waar nodig een loading state zodat er geen leeg scherm te zien was tijdens het ophalen van data uit de api, wanneer er wel data in local storage zat werden er meteen resultaten getoond, alleen kwamen de afbeeldingen een stuk later...
+
+![images slow 3G](https://user-images.githubusercontent.com/36195440/76603073-96aaa480-650c-11ea-86c4-bbbcb23ef252.png)
+
+Wanneer er geen data in localstorage is was dit het resultaat:
+
+![slow 3g](https://user-images.githubusercontent.com/36195440/76603709-bf7f6980-650d-11ea-9044-6b9ab7fbf4b0.png)
 
 ## geen afbeeldingen in chrome / brave / firefox:
 
-Ik heb veel gebruik gemaakt van background images, wat ik in dit geval wel goed gedaan heb is mijn containers een standaard hoogte en breedte te geven waardoor de ruimte niet vrijgeven wordt en de UI intact blijft.
+Ik heb veel gebruik gemaakt van background images, wat ik in dit geval wel goed gedaan heb is mijn containers een standaard hoogte en breedte te geven waardoor de ruimte niet vrijgeven wordt en de UI intact blijft ook hebben mijn tekstvelden een sterk contrasterende achtergrond zodat deze niet wegvallen tegen een wite achtergrond.
 
 > Firefox geeft "placeholders" die je laat weten dat er eigenlijk afbeeldingen horen te staan, chrome en brave tonen niks...
 
