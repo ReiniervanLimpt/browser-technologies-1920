@@ -15,3 +15,6 @@ positions elements within the form and gives feedback based on selected input va
 ### Pleasurable: JS
 
 morphs SVG shapes on the T-shirt and hides or displays elements when they are not needed ie. a button which skips to the next input when the previous input has been filled in, it also reminds the user to save when a new change to the design has been made.
+
+![dekt](https://user-images.githubusercontent.com/36195440/76963329-27282100-6921-11ea-8b89-961c5153d029.jpg)
+![deskt2](https://user-images.githubusercontent.com/36195440/76963334-298a7b00-6921-11ea-95e4-eba98569306d.jpg)
