@@ -2,7 +2,7 @@
 
 1: Ik heb mij allereerst gefocussed op het tacklen van mijn opdracht, namelijk: Ik wil mijn eigen t-shirt-met-nerdy-tekst kunnen ontwerpen, printen, opslaan, en een volgende keer dat ik de site bezoek kunnen gebruiken.
 
-Ik heb met hulp van Menno een manier gevonden om de aanpassingen die de gebruiker maakt aan zijn ontwerp op te slaan in een json file met een uniek id! met wat tweaks kan de gebuiker zijn shirt adhv dat id dus alles op het printen na werkt! (bijna) daarom mijn vraag... is het serveren van en jpeg bij t klikken op "print" voldoende om aan deze criteria te voldoen of hangt daar nog een stukje usability of "pleasurability" aan vast??
+Ik heb met hulp van Menno een manier gevonden om de aanpassingen die de gebruiker maakt aan zijn ontwerp op te slaan in een json file met een uniek id! met wat tweaks kan de gebuiker zijn shirt adhv dat id weer ophalen. dus alles op het printen na werkt! (bijna) daarom mijn vraag... is het serveren van en jpeg bij t klikken op "print" voldoende om aan deze criteria te voldoen of hangt daar nog een stukje usability of "pleasurability" aan vast??
 
 2: Ik struikel een beetje over "custom fonts uitzetten" in mijn hoofd is een goede fallback serif of sans-serif... ik wil namelijk gebruik maken van de native fonts van het os waarop de gebruiker mijn app bekijkt, en op basis daarvan kijken welk OS serif of sans-serif gebruikt.
 
