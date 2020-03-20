@@ -1,3 +1,13 @@
+# vragen week 2:
+
+1: Ik heb mij allereerst gefocussed op het tacklen van mijn opdracht, namelijk: Ik wil mijn eigen t-shirt-met-nerdy-tekst kunnen ontwerpen, printen, opslaan, en een volgende keer dat ik de site bezoek kunnen gebruiken.
+
+Ik heb met hulp van Menno een manier gevonden om de aanpassingen die de gebruiker maakt aan zijn ontwerp op te slaan in een json file met een uniek id! met wat tweaks kan de gebuiker zijn shirt adhv dat id dus alles op het printen na werkt! (bijna) daarom mijn vraag... is het serveren van en jpeg bij t klikken op "print" voldoende om aan deze criteria te voldoen of hangt daar nog een stukje usability of "pleasurability" aan vast??
+
+2: Ik struikel een beetje over "custom fonts uitzetten" in mijn hoofd is een goede fallback serif of sans-serif... ik wil namelijk gebruik maken van de native fonts van het os waarop de gebruiker mijn app bekijkt, en op basis daarvan kijken welk OS serif of sans-serif gebruikt.
+
+3: Heb(ben) je/jullie nog wat bronnen waar ik informatie uit kan halen voor het bruikbaar maken van een form met screenreaders?? ik heb een uur/anderhalf uur gedaan over het juist opstellen van mijn form met aria-labels ed. maar ik weet niet zo goed welke knoppen iemand die alleen met een screenreader navigeert gebruikt en welke labels,fieldsets, legends of wat dan ook belangrijk zijn...
+
 ## T shirt creator
 
 My use case:
