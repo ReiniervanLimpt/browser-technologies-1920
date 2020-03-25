@@ -1,0 +1,62 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>T-shirt</title>
+  <script src="/js/client.js"></script>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+  <main>
+    <form class="" action="/update" method="post" aria-label="maak je eigen shirt">
+      <fieldset>
+        <select name="maat">
+          <option value="small"<% if (maat=="small" ) { %> selected
+          <% } %>>S</option>
+          <option value="medium"<% if (maat=="medium" ) { %> selected
+          <% } %>>M</option>
+          <option value="large"<% if (maat=="large" ) { %> selected
+          <% } %>>L</option>
+          <option value="extra-large"<% if (maat=="extra-large" ) { %> selected
+          <% } %>>XL</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend aria-label="kleur van het shirt">Kleur van het shirt</legend>
+        <label> Blauw </label>
+        <input type="radio" name="kleur" value="blauw" required <% if (kleur=="blauw" ) { %> checked
+        <% } %>>
+          <label> Rood </label>
+          <input type="radio" name="kleur" value="rood" required <% if (kleur=="rood" ) { %> checked
+          <% } %>>
+            <label> Groen </label>
+            <input type="radio" name="kleur" value="groen" required <% if (kleur=="groen" ) { %> checked
+            <% } %>>
+      </fieldset>
+      <fieldset>
+        <legend aria-label="kleur van het shirt">Logo op het shirt</legend>
+        <label> Cirkel </label>
+        <input type="radio" name="vorm" value="cirkel" required <% if (vorm=="cirkel" ) { %> checked
+        <% } %>>
+          <label> Vierkant </label>
+          <input type="radio" name="vorm" value="vierkant" required <% if (vorm=="vierkant" ) { %> checked
+          <% } %>>
+            <label> Driehoek </label>
+            <input type="radio" name="vorm" value="driehoek" required <% if (vorm=="driehoek" ) { %> checked
+            <% } %>>
+      </fieldset>
+      <fieldset>
+        <label for="tekst">Tekst op het shirt</label>
+        <input id="tekst" name="shirtTekst" type="text" value="<%= shirtTekst %>">
+      </fieldset>
+      <input type="submit" value="print shirt">
+    </form>
+
+    <p>
+      het id van uw shirt:
+      <%= id %> gebruik deze om uw shirt later weer op te halen
+    </p>
+
+  </main>
+</body>
