@@ -19,6 +19,7 @@ app.use(
 
 app.get('/', open)
 app.post('/update', saveShirt)
+app.post('/getshirt', getShirt)
 
 
 function open(req, res) {
@@ -34,7 +35,8 @@ function saveShirt(req, res) {
     vorm,
     shirtTekst
   } = req.body
-  const id = (Math.floor(Math.random() * 100))
+  const randid = (Math.floor(Math.random() * 100))
+  const id = randid.toString();
   const jsonFile = 'data/data.json'
   fs.readFile(jsonFile, (err, content) => {
     if (err) return console.log(err)
@@ -61,9 +63,21 @@ function saveShirt(req, res) {
 }
 
 function getShirt(req, res) {
+  const requestedId = req.body.shirtId
+  const jsonFile = 'data/data.json'
   fs.readFile(jsonFile, "utf8", (err, data) => {
     if (err) return console.log(err)
     const shirtData = JSON.parse(data);
-    console.log(shirtData.shirts)
+    const corrId = shirtData.shirts.filter(function(myShirt) {
+      return myShirt.id === `${requestedId}`
+    })
+    console.log(corrId[0])
+    res.render('myshirt.ejs', {
+      id: corrId[0].id,
+      maat: corrId[0].maat,
+      kleur: corrId[0].kleur,
+      vorm: corrId[0].vorm,
+      shirtTekst: corrId[0].shirtTekst
+    })
   })
 }

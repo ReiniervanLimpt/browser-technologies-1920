@@ -1,0 +1,319 @@
+body{
+  background-color: #3a3a3a;
+  font-family: Courier New;
+  font-family: 'Oxanium';
+}
+
+.shirteditor{
+  position: relative;
+  margin-top: 20px;
+}
+
+.getshirt{
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+svg{
+  position: absolute;
+  height: 600px;
+  top: 10%;
+  left: 30%;
+}
+
+path{
+
+}
+
+form{
+  text-align: center;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding: 15px;
+  background-color: #595959;
+  border-radius: 15px;
+  box-shadow: 0px 10px 11px -1px rgba(0,0,0,0.75);
+}
+
+form:nth-of-type(1){
+  margin-left: 20px;
+}
+
+legend{
+  text-align: center;
+  width: 100%;
+  color: #00ff00;
+  font-size: 1.5em;
+}
+
+label{
+  border: solid 2px #3a3a3a;
+  text-align: center;
+  display: block;
+  box-shadow: 2px;
+  background: #e8f1f3;
+  height: 40px;
+  padding-top: 20px;
+  border-radius: 2px;
+  transition: border ease-in 0.2s;
+  width: 32%;
+}
+
+select{
+  margin-top: 10px;
+  text-align: center;
+  width: 10%;
+  height: 35px;
+  border-radius: 5px;
+}
+
+input[type=submit]{
+  width: 75%;
+  font-family: oxanium, courier new;
+  height: 30px;
+  border: 2px solid #00ff00;
+  color: white;
+  background: #666666;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+input[type=text]{
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+input[type=radio]{
+  display: none;
+}
+
+svg path#nice{
+  transition: fill 0.5s;
+  fill: white;
+}
+
+svg path#chill{
+  transition: 0.5s ease-in;
+}
+
+label:nth-of-type(13){
+  border-radius: 15px 2px 2px 15px;
+}
+
+label:nth-of-type(15){
+  border-radius: 2px 15px 15px 2px;
+}
+
+label:nth-of-type(1){
+  border-radius: 15px 2px 2px 2px;
+  background-color: rgba(236, 97, 32, 1);
+  color: rgba(236, 97, 32, 0.8);
+}
+
+input[id=orange]:checked ~ svg path#nice{
+  fill: #eb5f1d;
+}
+
+input[id=orange]:checked ~ label:nth-of-type(1){
+  background-color: rgba(236, 97, 32, 0.2);
+  border: solid 2px #eb5f1d;
+  color: white;
+}
+
+label:nth-of-type(2){
+  background-color: rgba(134, 111, 176, 1);
+  color: rgba(134, 111, 176, 0.8);
+}
+
+input[id=perltwinkle]:checked ~ svg path#nice{
+  fill: #866fb0;
+}
+
+input[id=perltwinkle]:checked ~ label:nth-of-type(2){
+  background-color: rgba(134, 111, 176, 0.2);
+  border: solid 2px #866fb0;
+  color: white;
+}
+
+label:nth-of-type(3){
+  border-radius: 2px 15px 2px 2px;
+  background-color: rgba(0, 255, 0, 1);
+  color: rgba(0, 255, 0, 0.8);
+}
+
+input[id=green]:checked ~ svg path#nice{
+  fill: rgba(0, 255, 0, 0.8);
+}
+
+input[id=green]:checked ~ label:nth-of-type(3){
+  background-color: rgba(0, 255, 0, 0.2);
+  border: solid 2px rgba(0, 255, 0, 1);
+  color: white;
+}
+
+label:nth-of-type(4){
+  background-color: rgba(18, 118, 116, 1);
+  color: rgba(18, 118, 116, 0.8);
+}
+
+input[id=tealblue]:checked ~ svg path#nice{
+  fill: #127674;
+}
+
+input[id=tealblue]:checked ~ label:nth-of-type(4){
+  background-color: rgba(18, 118, 116, 0.2);
+  border: solid 2px #127674;
+  color: white;
+}
+
+label:nth-of-type(5){
+  background-color: rgba(230, 179, 71, 1);
+  color: rgba(230, 179, 71, 1);
+}
+
+input[id=gold]:checked ~ svg path#nice{
+  fill: #e6b347;
+}
+
+input[id=gold]:checked ~ label:nth-of-type(5){
+  background-color: rgba(230, 179, 71, 0.2);
+  border: solid 2px #e6b347;
+  color: white;
+}
+
+label:nth-of-type(6){
+  background-color: rgba(166, 25, 22, 1);
+  color: rgba(166, 25, 22, 1);
+}
+
+input[id=cinnamon]:checked ~ svg path#nice{
+  fill: #a61916;
+}
+
+input[id=cinnamon]:checked ~ label:nth-of-type(6){
+  background-color: rgba(166, 25, 22, 0.2);
+  border: solid 2px #a61916;
+  color: white;
+}
+
+label:nth-of-type(7){
+  background-color: rgba(74, 55, 141, 1);
+  color: rgba(74, 55, 141, 1);
+}
+
+input[id=blueviolet]:checked ~ svg path#nice{
+  fill: #4a378d;
+}
+
+input[id=blueviolet]:checked ~ label:nth-of-type(7){
+  background-color: rgba(74, 55, 141, 0.2);
+  border: solid 2px #4a378d;
+  color: white;
+}
+
+label:nth-of-type(8){
+  background-color: rgba(235, 207, 178, 1);
+  color: rgba(235, 207, 178, 1);
+}
+
+input[id=sand]:checked ~ svg path#nice{
+  fill: #ebcfb2;
+}
+
+input[id=sand]:checked ~ label:nth-of-type(8){
+  background-color: rgba(235, 207, 178, 0.2);
+  border: solid 2px #ebcfb2;
+  color: white;
+}
+
+label:nth-of-type(9){
+  background-color: rgba(239, 124, 108, 1);
+  color: rgba(239, 124, 108, 1);
+}
+
+input[id=salmon]:checked ~ svg path#nice{
+  fill: #ef7c6c;
+}
+
+input[id=salmon]:checked ~ label:nth-of-type(9){
+  background-color: rgba(239, 124, 108, 0.2);
+  border: solid 2px #ef7c6c;
+  color: white;
+}
+
+label:nth-of-type(10){
+  border-radius: 2px 2px 2px 15px;
+  background-color: rgba(0, 0, 255, 1);
+  color: rgba(0, 0, 255, 1);
+}
+
+input[id=blauw]:checked ~ svg path#nice{
+  fill: rgba(0, 0, 255, 1);
+}
+
+input[id=blauw]:checked ~ label:nth-of-type(10){
+  background-color: rgba(0, 0, 255, 0.2);
+  border: solid 2px rgba(0, 0, 255, 1);
+  color: white;
+}
+
+label:nth-of-type(11){
+  background-color: rgba(255, 0, 0, 1);
+  color: rgba(255, 0, 0, 1);
+}
+
+input[id=rood]:checked ~ svg path#nice{
+  fill: rgba(255, 0, 0, 1);
+}
+
+input[id=rood]:checked ~ label:nth-of-type(11){
+  background-color: rgba(255, 0, 0, 0.2);
+  border: solid 2px rgba(255, 0, 0, 1);
+  color: white;
+}
+
+label:nth-of-type(12){
+  border-radius: 2px 2px 15px 2px;
+  background-color: rgba(255, 255, 0, 1);
+  color: rgba(255, 255, 0, 1);
+}
+
+input[id=geel]:checked ~ svg path#nice{
+  fill: rgba(255, 255, 0, 1);
+}
+
+input[id=geel]:checked ~ label:nth-of-type(12){
+  background-color: rgba(255, 255, 0, 0.2);
+  border: solid 2px rgba(255, 255, 0, 1);
+  color: white;
+}
+
+input[id=cirkel]:checked ~ svg path#chill{
+  d: path("M127.7,72.5l-5.5,5.5l-5.5-5.5h-10.9l-5.1,12l21.5,30.8l21.5-30.8l-5.1-12");
+}
+
+input[id=cirkel]:checked ~ label:nth-of-type(13){
+  background: linear-gradient(180deg, rgba(177,183,185,1) 0%, #e8f1f3 10%, rgba(177,183,185,1) 90%, #e8f1f3 100%);
+}
+
+input[id=vierkant]:checked ~ svg path#chill{
+  d: path("M120.7,83.1h6.2v-5.2h-11.4v37.5h11.4v-5.2h-6.2");
+}
+
+input[id=vierkant]:checked ~ label:nth-of-type(14){
+  background: linear-gradient(180deg, rgba(177,183,185,1) 0%, #e8f1f3 10%, rgba(177,183,185,1) 90%, #e8f1f3 100%);
+}
+
+input[id=driehoek]:checked ~ svg path#chill{
+  d: path("M120,77 120,77 100,115.4 140,115.4");
+}
+
+input[id=driehoek]:checked ~ label:nth-of-type(15){
+  background: linear-gradient(180deg, rgba(177,183,185,1) 0%, #e8f1f3 10%, rgba(177,183,185,1) 90%, #e8f1f3 100%);
+}

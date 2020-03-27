@@ -1,21 +1,33 @@
 {
   "shirts": [{
-    "id": 92,
+    "id": "69",
+    "maat": "small",
+    "kleur": "blauw",
+    "vorm": "driehoek",
+    "shirtTekst": "yrewsysy"
+  }, {
+    "id": "28",
     "maat": "large",
     "kleur": "groen",
     "vorm": "vierkant",
-    "shirtTekst": "hreaardst"
+    "shirtTekst": "yrewsysy"
   }, {
-    "id": 54,
-    "maat": "extra-large",
+    "id": "20",
+    "maat": "small",
     "kleur": "rood",
     "vorm": "vierkant",
-    "shirtTekst": "jhrh gag"
+    "shirtTekst": "lekker shirt!"
   }, {
-    "id": 9,
+    "id": "46",
     "maat": "large",
-    "kleur": "blauw",
+    "kleur": "rood",
+    "vorm": "cirkel",
+    "shirtTekst": "mooi ding"
+  }, {
+    "id": "87",
+    "maat": "extra-large",
+    "kleur": "gold",
     "vorm": "vierkant",
-    "shirtTekst": "rhhasr"
+    "shirtTekst": "beast"
   }]
 }
