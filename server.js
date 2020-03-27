@@ -4,7 +4,8 @@ const port = 8080
 const bodyParser = require('body-parser')
 const fs = require('fs');
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+app.listen(process.env.PORT || 8080);
 
 app.set('view engine', 'ejs');
 app.set('views', 'views')
