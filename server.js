@@ -34,6 +34,7 @@ function saveShirt(req, res) {
     maat,
     kleur,
     vorm,
+    geslacht,
     shirtTekst
   } = req.body
   const randid = (Math.floor(Math.random() * 100))
@@ -47,6 +48,7 @@ function saveShirt(req, res) {
       maat,
       kleur,
       vorm,
+      geslacht,
       shirtTekst
     }
     contentJSON.shirts.push(formData)
@@ -59,6 +61,7 @@ function saveShirt(req, res) {
     maat: maat,
     kleur: kleur,
     vorm: vorm,
+    geslacht: geslacht,
     shirtTekst: shirtTekst
   })
 }
@@ -78,6 +81,7 @@ function getShirt(req, res) {
       maat: corrId[0].maat,
       kleur: corrId[0].kleur,
       vorm: corrId[0].vorm,
+      geslacht: corrId[0].geslacht,
       shirtTekst: corrId[0].shirtTekst
     })
   })
