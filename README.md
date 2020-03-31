@@ -30,22 +30,6 @@ Mijn functionele laag heb ik opgebouwd aan de hand van een json bestand waarin d
 ```
 
 ```javascript
-  fs.readFile(jsonFile, (err, content) => {
-    if (err) return console.log(err)
-    const contentJSON = JSON.parse(content)
-    const formData = {
-      id,
-      maat,
-      kleur,
-      vorm,
-      geslacht,
-      shirtTekst
-    }
-    contentJSON.shirts.push(formData)
-    fs.writeFile(jsonFile, JSON.stringify(contentJSON), err => {
-      if (err) console.log(err)
-    })
-    
       fs.readFile(jsonFile, "utf8", (err, data) => {
     if (err) return console.log(err)
     const shirtData = JSON.parse(data);
