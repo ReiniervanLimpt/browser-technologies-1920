@@ -1,141 +1,80 @@
-# Browser Technologies @cmda-minor-web 1920
-//Robuuste, toegankelijke websites ontwerpen en maken …
+## Mijn use case
 
-In het vak Browser Technologies leer je hoe je goede, robuuste, toegankelijke websites maakt. Je gaat leren over Progressive Enhancement, Feature Detection en Fallback. Het web is er voor iedereen. In dit vak leer je hoe je daarvoor kan zorgen.
+Ik wil mijn eigen t-shirt-met-nerdy-tekst kunnen ontwerpen, printen, opslaan, en een volgende keer dat ik de site bezoek kunnen gebruiken.
 
-Een van de mooiste principes van het web is dat het er echt is voor iedereen. Iedereen met een computer en een browser moet gebruik kunnen maken van het web. Het web is geen gecontroleerde (programmeer) omgeving. Je kan er gerust van uit gaan dat niemand precies hetzelfde te zien krijgt als wat jij ziet in jouw browser. Er zijn natuurlijk de technische beperkingen. Zoals - Afmetingen van de browser - Grootte van het apparaat - Manier van interactie - Kwaliteit van de hardware - Kwaliteit van het netwerk. En er zijn mensen. Allemaal verschillende mensen ... Hoe zorg je er dan voor dat websites het altijd doen?
+### Functional:
 
-## Leerdoelen
-- _Wat is Progressive enhancement en hoe kun je dit toepassen._
-- _Hoe doe je Feature Detection en wat doe je als een techniek niet werkt of wordt ondersteund._
-- _Leren een Browser Technologies onderzoeken, testen en implementeren als enhancement._
+![functionele laag](https://user-images.githubusercontent.com/36195440/78015210-630fad00-7349-11ea-928a-fe2660d708af.jpg)
 
-[Rubric](https://docs.google.com/spreadsheets/d/1MV3BWwwg_Zz1n-S_qOM4iSm4gA4M6g0xAxGacyaPuac/edit?usp=sharing)
+- [x] i want to be able to design my own nerdy shirt.
+- [x] i want to save my shirt.
+- [x] and look it up the next time i open the webpage.
+- [ ] i want to be able to print my shirt
 
-## Planning
+I built up my functional layer with HTML forms using the correct tags and aria-labels for screenreaders, users design their shirt using the forms input fields and can save the forms parameters in a json file which also gives it a randomly generated ID. Users can then look up their design by looking up their shirts ID. This is also a workaround for localstorage which otherwise would require feature detection which checks if the window has local storage.
 
-| Planning  | Woensdag  |  Donderdag | Vrijdag  |
-|---|---|---|---|
-| <a href=#week-1>Week 1</a>  | Introductie, College over Progressive enhancement + briefing opdracht 1.1 | College Browser detect + presentaties opdracht 1.1 + briefing opdracht 1.2 Fork je OBA  | Feedbackgesprekken + Bowlen! |
-| <a href=#week-2>Week 2</a>  | College Feature detect + Briefing opdracht 2  | College Browsers + werken aan de opdracht | Feedbackgesprekken  |
-| <a href=#week-3>Week 3</a>  | College Notificaties + werken aan de opdracht  |  Werken aan de opdracht | Beoordelingsgesprekken  |
+```javascript
+  fs.readFile(jsonFile, (err, content) => {
+    if (err) return console.log(err)
+    const contentJSON = JSON.parse(content)
+    const formData = {
+      id,
+      maat,
+      kleur,
+      vorm,
+      geslacht,
+      shirtTekst
+    }
+    contentJSON.shirts.push(formData)
+    fs.writeFile(jsonFile, JSON.stringify(contentJSON), err => {
+      if (err) console.log(err)
+    })
+```
 
+```javascript
+      fs.readFile(jsonFile, "utf8", (err, data) => {
+    if (err) return console.log(err)
+    const shirtData = JSON.parse(data);
+    const corrId = shirtData.shirts.filter(function(myShirt) {
+      return myShirt.id === `${requestedId}`
+    })
+    console.log(corrId[0])
+    res.render('myshirt.ejs', {
+      id: corrId[0].id,
+      maat: corrId[0].maat,
+      kleur: corrId[0].kleur,
+      vorm: corrId[0].vorm,
+      geslacht: corrId[0].geslacht,
+      shirtTekst: corrId[0].shirtTekst
+    })
+  })
+```
 
+### Usable:
 
-## Programma
+This is where i styled my page to give the user feedback based on the design choises they made. 
 
-### Week 1
-Het web is voor iedereen. Leren over Progressive enhancement en kennismaken met testen en het device lab. [Planning week 1](./slides/Week1.png)
+* by using the "checked" values of radio inputs i can style other elements (in this case the shirt) which is an svg so even with images disabled the shirt still shows.
 
-#### Woensdag
-- [Les 1 - Progressive enhancement & Briefing Opdracht 1.1](./slides/BT1920%20College%20Les1%20-%20Progressive%20Enhancement.pdf)
-- [Opdracht 1.1 - Breek het web](Opdracht1.1.md)
+![usable laag](https://user-images.githubusercontent.com/36195440/78015204-61de8000-7349-11ea-81b3-e135556bc398.jpg)
 
-#### Weekly Nerd
-Sanne 't Hooft over Interactie. Woensdag 11 Maart, 16:00 in het minorlokaal.
 
-#### Donderdag
-- [Les 2 - Features testen & Briefing opdracht 1.2](./slides/BT1920%20College%20Les2%20-%20Progressive%20Enhancement.pdf)
-- [Opdracht 1.2 - Fork je OBA](Opdracht1.2.md)
+## issues with other browsers
 
-Deze les gaan we onderstaand artikelen bespreken:
-- [Everyone has JavaScript, right? by Stuart Langridge](https://kryogenix.org/code/browser/everyonehasjs.html)
-- [The Web I Want by Chris James](https://dev.to/quii/the-web-i-want-43o)
+- [ ] Only chromium browsers support shape morphing through svgs, so for other browsers i need to make the changes visible without animations...
 
+## issues with features
 
-#### Vrijdag
-Feedbackgesprekken opdracht 1.2 n groepjes en studetnassistenten en docenten.
+1 :white_check_mark: disabling images: there are currently no images in my application, only SVG's.
 
-Deze les gaan we onderstaande artikel bespreken:
-- [Lezen: Understanding Progressive Enhancement by Aaron Gustafson](https://alistapart.com/article/understandingprogressiveenhancement)
+2 :white_check_mark: disabling custom fonts: i wrote a simple font-stack which looks for other declared fonts and finally any sans-serif font supported by the browser. `font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;`
 
+3 :exclamation: disabling color / adding colorblindness: this is a big problem in my application, at this stage the user only gets te read the name of the color when its selected, and some of the names are cryptic like: "perltwinkle" or "cinnamon".
 
+4 :exclamation: mouse / trackpad not working: at this stage i could no longer tab through my radio buttons.
 
+5: :white_check_mark: disabling broadband internet: The page loads within 6 seconds, even with slow 3g throttling.
 
+6: :white_check_mark: Disabling javascript: only CSS up untill this point.
 
-### Week 2
-Wat laat je zien als een browser of gebruiker een 'enhancement' niet kan tonen of zien? Hoe doe je Feature Detection en wat doe je als een techniek niet werkt of wordt ondersteund? [Planning week 2](./slides/Week2.png)
-
-#### Woensdag
-- [Les 3 - Over Feature detect & Briefing opdracht 2]()
-- [Opdracht 2 - Progressive Enhanced Browser Technologie](Opdracht2.md)
-
-Deze les gaan we onderstaande artikelen bespreken:
-- [The Role of Enhancement in Web Design by Raluca Budiu / Nielsen Norman Group](https://www.nngroup.com/articles/enhancement/)
-- [Accessibility Through Semantic HTML by Laura Kalbag](https://24ways.org/2017/accessibility-through-semantic-html/)
-
-
-#### Weekly Nerd
-PE bij de Voorhoede.
-
-
-#### Donderdag
-- [Les 4 - Over Browsers]()
-
-Deze les gaan we onderstaande artikelen bespreken:
-- [The accessibility mindset by Eric Eggert](https://24ways.org/2015/the-accessibility-mindset/)
-- [HTML: The Inaccessible Parts](https://daverupert.com/2020/02/html-the-inaccessible-parts/)
-
-
-#### Vrijdag
-Code review en feedbackgesprekken opdracht 2.
-
-
-
-
-### Week 3
-Deze week werken we verder aan opdracht 2. [Planning week 3](./slides/Week3.png)
-
-
-#### Woensdag
-- [Les 5 - Over Notificaties]()
-
-Deze les gaan we onderstaande artikelen bespreken:
-- [Progressive Enhancement and Data Visualizations by Chris Coyier](https://css-tricks.com/progressive-enhancement-data-visualizations/)
-- [Make the Web Work For Everyone by Justin Crawford, Chris Mills, Ali Spivak](https://hacks.mozilla.org/2016/07/make-the-web-work-for-everyone/)
-
-
-#### Weekly Nerd
-Op bezoek bij Bol.com
-
-
-#### Donderdag
-Verder werken aan opdracht 2
-
-
-
-#### Vrijdag
-Code review en beoordelingsgesprekken opdracht 2.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Add a link to your live demo in Github Pages 🌐-->
-
-<!-- ☝️ replace this description with a description of your own work -->
-
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
-
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
-
-<!-- Maybe a table of contents here? 📚 -->
-
-<!-- How about a section that describes how to install this project? 🤓 -->
-
-<!-- ...but how does one use this project? What are its features 🤔 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+7: :exclamation: :question: disabling coockies/local storage: my page does not use local storage, sadly i cannot write a feature detect to deal with this issue.
