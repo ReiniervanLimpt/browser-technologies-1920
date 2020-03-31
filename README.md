@@ -4,10 +4,10 @@ Ik wil mijn eigen t-shirt-met-nerdy-tekst kunnen ontwerpen, printen, opslaan, en
 
 ### Functionele laag:
 
-[x] ik wil een shirt kunnen ontwerpen.
-[x] ik wil mijn shirt later weer kunnen ophalen.
-[x] ik wil mijn shirt kunnen opslaan.
-[ ] ik wil mijn shirt kunnen printen.
+- [x] ik wil een shirt kunnen ontwerpen.
+- [x] ik wil mijn shirt later weer kunnen ophalen.
+- [x] ik wil mijn shirt kunnen opslaan.
+- [ ] ik wil mijn shirt kunnen printen.
 
 Mijn functionele laag heb ik opgebouwd aan de hand van een json bestand waarin de gebruiker zijn waardes uit het formulier opslaat en weer op kan halen aan de hand van een automatisch gegenereerd ID
 
