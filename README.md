@@ -79,12 +79,7 @@ The page where the user requests his previous design doesnt work in firefox! the
 in firefox this would not work, my solution? check which shape and shirt type are requested and make a javascript if statement with templating to only only display the animation specification corresponding to the one in the database.
 
 
-<% if (vorm=="heart" ) { %>
-    <animate id="to-heart" href="#vorm" end-value-list
-    attributeName="d"
-    to=*shape_path*
-    dur="0.5s"
-    fill="freeze" />
+<% if (vorm=="heart" ) { %><animate></animate>
 <% } %>`
 
 ### this issue was very challenging and took me a lot of time and hacking to work around... i am proud of the result.
