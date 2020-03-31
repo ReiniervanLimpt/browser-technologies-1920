@@ -63,6 +63,12 @@ This is where i styled my page to give the user feedback based on the design cho
 
 - [ ] Only chromium browsers support shape morphing through svgs, so for other browsers i need to make the changes visible without animations...
 
+## tackling the SVG issue :star:
+
+i stumbled upon [this article](http://blog.greggant.com/posts/2018/10/10/svg-path-d-animation-in-2018.html) explaining only chromium browsers can animate the "d" path of an SVG with CSS, i now added SMIL ( Synchronized Multimedia Integration Language) a built in animation specification within the SVG to trigger animations with javascript...
+
+*i decided to keep in the css d path animation so the shirt still animates in chromium browsers without javascript enabled*
+
 ## issues with features
 
 1 :white_check_mark: disabling images: there are currently no images in my application, only SVG's.
@@ -78,3 +84,4 @@ This is where i styled my page to give the user feedback based on the design cho
 6: :white_check_mark: Disabling javascript: only CSS up untill this point.
 
 7: :exclamation: :question: disabling coockies/local storage: my page does not use local storage, sadly i cannot write a feature detect to deal with this issue.
+
