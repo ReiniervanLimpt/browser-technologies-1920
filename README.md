@@ -82,7 +82,7 @@ in firefox this would not work, my solution? check which shape and shirt type ar
 <% if (vorm=="heart" ) { %><animate></animate>
 <% } %>`
 
-### this issue was very challenging and took me a lot of time and hacking to work around... i am proud of the result.
+## this issue was very challenging and took me a lot of time and hacking to work around... i am proud of the result.
 
 ## issues with features
 
