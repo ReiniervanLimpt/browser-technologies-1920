@@ -84,7 +84,7 @@ in firefox this would not work, my solution? check which shape and shirt type ar
     to=*shape_path*
     dur="0.5s"
     fill="freeze" />
- <% } %>
+ <% } %>`
 
 ### this issue was very challenging and took me a lot of time and hacking to work around... i am proud of the result.
 
