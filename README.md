@@ -118,3 +118,7 @@ With Javascript i added a colorblind mode for the user to toggle, it only appear
       colorBlind.textContent = "KLEURENBLIND MODUS: UIT";
     }
 ```
+
+Other browsers than chromium cannot translate svg paths with CSS so i considered css morphs to be a fallback for when javascript fails to load on chromium browsers, If you disable javascript on any chromium browsers my app will still work as if it had javascript enabled.
+
+Sadly the shirt editor feedback fails on any other browser if javascript is disabled.
