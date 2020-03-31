@@ -107,3 +107,18 @@ in firefox this would not work, my solution? check which shape and shirt type ar
 according to [this article](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/) the strongest contrast for text on colored fields is black, i implemented a colorblind mode which changes the labels to more common color names.
 
 ![kleurenblind](https://user-images.githubusercontent.com/36195440/78056214-092cd880-7385-11ea-8757-93b61c8ea48b.png)
+
+### Pleasurable:
+
+With Javascript i added a colorblind mode for the user to toggle, it only appears when you have javascript enabled considering it requires javascript to work. I wrote for loops to assign the correct classes to labels because forEach is ES6 which isnt supported on opera and internet explorer.
+
+```javascript
+    for (i = 0; i < 12; i++) {
+      labels[i].classList.remove("colorblind")
+      colorBlind.textContent = "KLEURENBLIND MODUS: UIT";
+    }
+```
+
+Other browsers than chromium cannot translate svg paths with CSS so i considered css morphs to be a fallback for when javascript fails to load on chromium browsers, If you disable javascript on any chromium browsers my app will still work as if it had javascript enabled.
+
+Sadly the shirt editor feedback fails on any other browser if javascript is disabled.
