@@ -66,10 +66,16 @@ This is where i styled my page to give the user feedback based on the design cho
 ## issues with features
 
 1 :white_check_mark: disabling images: there are currently no images in my application, only SVG's.
+
 2 :white_check_mark: disabling custom fonts: i wrote a simple font-stack which looks for other declared fonts and finally any sans-serif font supported by the browser.
+
 `font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;`
 3 :exclamation: disabling color / adding colorblindness: this is a big problem in my application, at this stage the user only gets te read the name of the color when its selected, and some of the names are cryptic like: "perltwinkle" or "cinnamon".
+
 4 :exclamation: mouse / trackpad not working: at this stage i could no longer tab through my radio buttons.
+
 5: :white_check_mark: disabling broadband internet: The page loads within 6 seconds, even with slow 3g throttling.
+
 6: :white_check_mark: Disabling javascript: only CSS up untill this point.
+
 7: :exclamation: :question: disabling coockies/local storage: my page does not use local storage, sadly i cannot write a feature detect to deal with this issue.
