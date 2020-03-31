@@ -69,6 +69,17 @@ i stumbled upon [this article](http://blog.greggant.com/posts/2018/10/10/svg-pat
 
 *i decided to keep in the css d path animation so the shirt still animates in chromium browsers without javascript enabled*
 
+## hold up, thats not working yet :cold_sweat:
+
+The page where the user requests his previous design doesnt work in firefox! the shirt does not display with the right model or shape on the front... this is because the "chromium way" of morphing my SVG graphic worked with:
+`input[id=vrouw]:checked ~ svg path#shirt{
+  d: path(*shape_path*);
+}`
+
+in firefox this would not work, my solution? check which shape and shirt type are requested and make a javascript if statement with templating to only only display the animation specification corresponding to the one in the database.
+
+### this issue was very challenging and took me a lot of time and hacking to work around... i am proud of the result.
+
 ## issues with features
 
 1 :white_check_mark: disabling images: there are currently no images in my application, only SVG's.
