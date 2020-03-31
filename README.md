@@ -11,9 +11,7 @@ Ik wil mijn eigen t-shirt-met-nerdy-tekst kunnen ontwerpen, printen, opslaan, en
 - [x] and look it up the next time i open the webpage.
 - [ ] i want to be able to print my shirt
 
-Mijn functionele laag heb ik opgebouwd aan de hand van een json bestand waarin de gebruiker zijn waardes uit het formulier opslaat en weer op kan halen aan de hand van een automatisch gegenereerd ID
-
-I build up my functional layer with HTML forms using the correct tags and aria-labels for screenreaders, users design their shirt using the forms input fields and can save the forms parameters in a json file which also gives it a randomly generated ID. Users can then look up their design by looking up their shirts ID.
+I built up my functional layer with HTML forms using the correct tags and aria-labels for screenreaders, users design their shirt using the forms input fields and can save the forms parameters in a json file which also gives it a randomly generated ID. Users can then look up their design by looking up their shirts ID. This is also a workaround for localstorage which otherwise would require feature detection which checks if the window has local storage.
 
 ```javascript
   fs.readFile(jsonFile, (err, content) => {
@@ -59,3 +57,19 @@ This is where i styled my page to give the user feedback based on the design cho
 * by using the "checked" values of radio inputs i can style other elements (in this case the shirt) which is an svg so even with images disabled the shirt still shows.
 
 ![usable laag](https://user-images.githubusercontent.com/36195440/78015204-61de8000-7349-11ea-81b3-e135556bc398.jpg)
+
+
+## issues with other browsers
+
+- [ ] Only chromium browsers support shape morphing through svgs, so for other browsers i need to make the changes visible without animations...
+
+## issues with features
+
+1 :white_check_mark: disabling images: there are currently no images in my application, only SVG's.
+2 :white_check_mark: disabling custom fonts: i wrote a simple font-stack which looks for other declared fonts and finally any sans-serif font supported by the browser.
+`font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;`
+3 :exclamation: disabling color / adding colorblindness: this is a big problem in my application, at this stage the user only gets te read the name of the color when its selected, and some of the names are cryptic like: "perltwinkle" or "cinnamon".
+4 :exclamation: mouse / trackpad not working: at this stage i could no longer tab through my radio buttons.
+5: :white_check_mark: disabling broadband internet: The page loads within 6 seconds, even with slow 3g throttling.
+6: :white_check_mark: Disabling javascript: only CSS up untill this point.
+7: :exclamation: :question: disabling coockies/local storage: my page does not use local storage, sadly i cannot write a feature detect to deal with this issue.
