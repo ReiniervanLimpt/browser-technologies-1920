@@ -81,7 +81,7 @@ i stumbled upon [this article](http://blog.greggant.com/posts/2018/10/10/svg-pat
 
 5: :white_check_mark: disabling broadband internet: The page loads within 6 seconds, even with slow 3g throttling.
 
-6: :white_check_mark: Disabling javascript: only CSS up untill this point.
+6: :white_check_mark: Disabling javascript: SVG's wont change shape if javascript is disabled in any other browser than chromium browsers, you can read all about this in the "Issues with other browsers" section above
 
 7: :exclamation: :question: disabling coockies/local storage: my page does not use local storage, sadly i cannot write a feature detect to deal with this issue.
 
