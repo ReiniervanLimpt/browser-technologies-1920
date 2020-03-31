@@ -1,6 +1,6 @@
-## Mijn use case
+## MY use case
 
-Ik wil mijn eigen t-shirt-met-nerdy-tekst kunnen ontwerpen, printen, opslaan, en een volgende keer dat ik de site bezoek kunnen gebruiken.
+I want to create,edit, print and save my own t-shirt-with-nerdy-text and be able to look it up the next time i visit the website.
 
 ### Functional:
 
@@ -90,7 +90,7 @@ in firefox this would not work, my solution? check which shape and shirt type ar
 
 2 :white_check_mark: disabling custom fonts: i wrote a simple font-stack which looks for other declared fonts and finally any sans-serif font supported by the browser. `font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;`
 
-3 :exclamation: disabling color / adding colorblindness: this is a big problem in my application, at this stage the user only gets te read the name of the color when its selected, and some of the names are cryptic like: "perltwinkle" or "cinnamon".
+3 :exclamation: :white_check_mark: *fixed, result below* disabling color / adding colorblindness: this is a big problem in my application, at this stage the user only gets te read the name of the color when its selected, and some of the names are cryptic like: "perltwinkle" or "cinnamon".
 
 4 :exclamation: mouse / trackpad not working: at this stage i could no longer tab through my radio buttons.
 
@@ -102,3 +102,8 @@ in firefox this would not work, my solution? check which shape and shirt type ar
 
 :star: My app is rendering pages serverside and is fully functional on chromium browsers without coockies, local storage and javascript.
 
+## tackling the disabled color issue
+
+according to [this article](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/) the strongest contrast for text on colored fields is black, i implemented a colorblind mode which changes the labels to more common color names.
+
+![kleurenblind](https://user-images.githubusercontent.com/36195440/78056214-092cd880-7385-11ea-8757-93b61c8ea48b.png)
