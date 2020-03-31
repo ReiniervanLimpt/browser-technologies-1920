@@ -61,7 +61,7 @@ This is where i styled my page to give the user feedback based on the design cho
 
 ## issues with other browsers
 
-- [ ] Only chromium browsers support shape morphing through svgs, so for other browsers i need to make the changes visible without animations...
+- [x] Only chromium browsers support shape morphing through svgs, so for other browsers i need to make the changes visible without animations...
 
 ## tackling the SVG issue :star:
 
