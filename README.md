@@ -2,6 +2,11 @@
 
 I want to create,edit, print and save my own t-shirt-with-nerdy-text and be able to look it up the next time i visit the website.
 
+To start off i made some sketches with ideas of what my app should look and feel like as well as how the three layers (functional, useable and pleasurable) would be visible in my application.
+
+![dekt](https://user-images.githubusercontent.com/36195440/76963329-27282100-6921-11ea-8b89-961c5153d029.jpg)
+![deskt2](https://user-images.githubusercontent.com/36195440/76963334-298a7b00-6921-11ea-95e4-eba98569306d.jpg)
+
 ### Functional:
 
 ![functionele laag](https://user-images.githubusercontent.com/36195440/78015210-630fad00-7349-11ea-928a-fe2660d708af.jpg)
@@ -11,7 +16,7 @@ I want to create,edit, print and save my own t-shirt-with-nerdy-text and be able
 - [x] and look it up the next time i open the webpage.
 - [ ] i want to be able to print my shirt
 
-I built up my functional layer with HTML forms using the correct tags and aria-labels for screenreaders, users design their shirt using the forms input fields and can save the forms parameters in a json file which also gives it a randomly generated ID. Users can then look up their design by looking up their shirts ID. This is also a workaround for localstorage which otherwise would require feature detection which checks if the window has local storage.
+I built up my functional layer with HTML forms using aria-labels for screenreaders !exclamation! *i have not properly tested with a screenreader or emolator yet* !exclamation!, users design their shirt using the forms input fields and can save the forms parameters in a json file which also gives it a randomly generated ID. Users can then look up their design by looking up their shirts ID. This is also a workaround for localstorage which otherwise would require feature detection which checks if the window has local storage.
 
 ```javascript
   fs.readFile(jsonFile, (err, content) => {
