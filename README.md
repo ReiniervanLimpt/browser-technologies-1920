@@ -54,6 +54,28 @@ I built up my functional layer with HTML forms using the correct tags and aria-l
 
 This is where i styled my page to give the user feedback based on the design choises they made. 
 
+## CSS fallbacks
+
+To make sure the browser keeps a sans-serif font for the nerdy look i wrote a font stack as a fallback.
+Some browsers (like my phone on google chrome) dont support gradient backgrounds, as a fallback i gave the background a color.
+
+```javascript
+{
+  background: linear-gradient(90deg, #3a3a3a 0%, #212121 15%, #212121 85%, #3a3a3a 100%);
+  background: #3a3a3a;
+  font-family: 'Oxanium', Courier, Tahoma, Sans-Serif;
+}
+```
+
+As rem and em is common in allmost all borwsers i used these units to scale my text, for instance; i gave my form container another em value so all its siblings (scaled with em units would scale relative to the containers "rem")
+
+```javascript
+  form{
+    width: 80%;
+    font-size: 0.8em;
+  }
+```
+
 * by using the "checked" values of radio inputs i can style other elements (in this case the shirt) which is an svg so even with images disabled the shirt still shows.
 
 ![usable laag](https://user-images.githubusercontent.com/36195440/78015204-61de8000-7349-11ea-81b3-e135556bc398.jpg)
