@@ -67,7 +67,7 @@ Some browsers (like my phone on google chrome) dont support gradient backgrounds
 }
 ```
 
-As rem and em is common in allmost all borwsers i used these units to scale my text, for instance; i gave my form container another em value so all its siblings (scaled with em units would scale relative to the containers "rem")
+As rem and em is common in allmost all borwsers i used these units to scale my text, for instance; i gave my form container another em values on small screens so all its siblings (scaled with em units would scale relative to the containers "rem")
 
 ```javascript
   form{
