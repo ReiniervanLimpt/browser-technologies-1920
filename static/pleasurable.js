@@ -2,6 +2,8 @@ const colorBlind = document.querySelector('button')
 const labels = document.querySelectorAll('label')
 const legends = document.querySelectorAll('legend')
 
+colorBlind.classList.remove("hidden")
+
 const shirtMaker = document.getElementsByClassName("shirtmaker")[0];
 
 colorBlind.addEventListener('click', function() {

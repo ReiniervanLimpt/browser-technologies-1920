@@ -400,6 +400,10 @@ text{
   background: #aaaaaa;
 }
 
+.hidden{
+  visibility: hidden;
+}
+
 @media (max-width: 40em){
   label{
     height: 30px;
