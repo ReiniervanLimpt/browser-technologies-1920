@@ -1,12 +1,19 @@
 const colorBlind = document.querySelector('button')
 const labels = document.querySelectorAll('label')
+const legends = document.querySelectorAll('legend')
+
+const shirtMaker = document.getElementsByClassName("shirtmaker")[0];
 
 colorBlind.addEventListener('click', function() {
+  console.log(shirtMaker)
   if (labels[0].classList.contains("colorblind")) {
     for (i = 0; i < 12; i++) {
       labels[i].classList.remove("colorblind")
-      colorBlind.textContent = "KLEURENBLIND MODUS: UIT";
     }
+    for (i = 1; i < 5; i++) {
+      legends[i].classList.remove("dark")
+    }
+    shirtMaker.classList.remove("bright");
     labels[1].textContent = "PERLTWINKLE";
     labels[2].textContent = "NERD GREEN";
     labels[5].textContent = "CINNAMON";
@@ -18,12 +25,16 @@ colorBlind.addEventListener('click', function() {
       labels[i].classList.add("colorblind")
       colorBlind.textContent = "KLEURENBLIND MODUS: AAN";
     }
+    for (i = 1; i < 5; i++) {
+      legends[i].classList.add("dark")
+    }
+    shirtMaker.classList.add("bright");
     labels[1].textContent = "BRIGHT PURPLE";
     labels[2].textContent = "BRIGHT GREEN";
     labels[5].textContent = "DARK RED";
     labels[6].textContent = "DARK PURPLE";
     labels[7].textContent = "LIGHT BROWN";
-    labels[8].textContent = "ROZE";
+    labels[8].textContent = "PINK";
   }
 })
 

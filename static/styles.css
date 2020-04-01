@@ -392,6 +392,14 @@ text{
   color: black !important;
 }
 
+.dark{
+  color: black !important;
+}
+
+.bright{
+  background: #aaaaaa;
+}
+
 @media (max-width: 40em){
   label{
     height: 30px;
