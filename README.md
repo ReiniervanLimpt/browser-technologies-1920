@@ -104,9 +104,19 @@ in firefox this would not work, my solution? check which shape and shirt type ar
 
 ## tackling the disabled color issue
 
-according to [this article](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/) the strongest contrast for text on colored fields is black, i implemented a colorblind mode which changes the labels to more common color names.
+According to [this article](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/) the strongest contrast for text on colored fields is black, i implemented a colorblind mode which changes the labels to more common color names.
 
 ![kleurenblind](https://user-images.githubusercontent.com/36195440/78056214-092cd880-7385-11ea-8757-93b61c8ea48b.png)
+
+To make sure the text is still ledgible on a transparent label i tested my contrast ratios of the black text against my background.
+
+![weak](https://user-images.githubusercontent.com/36195440/78119191-57cf8680-7408-11ea-982c-b7e2f2f8d1cb.png)
+![strong](https://user-images.githubusercontent.com/36195440/78119196-59994a00-7408-11ea-9b7b-c0bfb4e65f4f.png)
+
+I also checked if my buttons stood out against my darker backgrounds.
+
+![background](https://user-images.githubusercontent.com/36195440/78119271-746bbe80-7408-11ea-8911-dce3ab2fa21c.png)
+
 
 ### Pleasurable:
 
