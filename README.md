@@ -168,28 +168,30 @@ i Asked my friend to test my website on her safari browser to see if the SVG pat
 
 ## conclusion
 
-* Core funcitonality first
+> Core funcitonality first
 
 When i was creating my app i tried "planning" the design of it by starting with the usable layer, this ment that i first focussed on getting my app working on as many browsers as possible with just plain html. I then added some styling and implemented some javascript to help browsers which did not support the SVG animations i implemented.
 
 Overall i am proud of how i handled the prerequisited for my chosen assignment.
 
-* Designing for users with disabilities
+> Designing for users with disabilities
 
 The main thing i added with javascript is probably the colorblind option, it shows the name of colors in ways someone who copes with colorblindness could comprehend, cinnamon would become dark red for instance, and the text color would change to a strong contrasting color with its corresponding background color. The app allso directly animates the shirt the user is designing to illustrate the changes you made to the design.
 
 The colorblind mdoe is working quite nicely with the principles ive learnt in Smashing Mags article about designing for people with colorblindness, one thing i couldve done better is not adding the button in html but implementing it with javascript instead... because it wont work without javascript!
 
-* Applying progressive enhancement
+> Applying progressive enhancement
+
+In short, progressive enhancement means designing the core functionality first and slowly adding more layers of functionality and styling while making sure it works on as many browsers and connections as possible.
 
 During my design i tried to have as much of my core functionality working with just html, and the pleasurable layer (animations) with just CSS. To enhance the webpage i used javascript mainly to hlep other browsers view the page in the same way chromium browsers do (it runs best on chromium) the website is enhanced with a colorblind mode, the colorblind mode button will not be shown if javascript is disabled. So i gues you could say that i enhanced my technical layer to find solutions you would otherwise use javasscript for.
 
 I thought it was quite hard to progressively enhance my design, i think ive made things very difficult for myself by trying to add SVG image transitions which are supported by hardly any browser! most of my code is now based around getting those animations working on multiple browsers...
 
-* Code structure
+> Code structure
 
 As you can read in the readME ive designed the webpage in three layers by splitting it up into three logical steps, this was very usefull and really helped me to keep focus on whats important where i would otherwise get lost in trying to make things look flashy and "pleasurable" as i usually like to do.
 
-* feature detection
+> feature detection
 
 To be honest i kind of cheated on this part of the assignment... i tried to find clever ways of bypassing local storage by using json files and other workarounds. In my conversation with Peter Paul we did talk about other ways i could add feature detection like checking if the browser has local storage enabled upon saving the shirt, if this wasnt the case i could save the shirt in the json file instead, this would have been a nice was to enhance my website and apply feature detection.
